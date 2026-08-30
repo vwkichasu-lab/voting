@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { connectDB } from './db.js';
 import { load } from './store.js';
 import authRoutes from './routes/auth.js';
 import electionRoutes from './routes/election.js';
@@ -19,7 +20,28 @@ app.use(express.json({ limit: '1mb' }));
 const distPath = path.resolve(__dirname, '..', '..', 'frontend', 'dist');
 app.use(express.static(distPath, { index: false }));
 
-load();
+// Initialize database (try MongoDB, fall back to JSON)
+async function initializeDatabase() {
+  try {
+    console.log('[Init] Attempting MongoDB connection...');
+    await connectDB();
+    console.log('[Init] Using MongoDB for data storage');
+  } catch (err) {
+    console.log('[Init] MongoDB unavailable, falling back to JSON storage:', err.message);
+    load();
+  }
+}
+
+// Initialize before handling requests
+app.use(async (req, res, next) => {
+  try {
+    await initializeDatabase();
+    next();
+  } catch (err) {
+    console.error('[Init] Database initialization failed:', err);
+    next();
+  }
+});
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date().toISOString() }));
 
