@@ -21,3 +21,4 @@ status = 200
 directory = "netlify/functions"
 node_bundler = "esbuild"
 included_files = ["backend/**"]
+excluded_files = ["backend/node_modules/**", "backend/**/*.test.js"]

@@ -1,0 +1,1203 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@level200.local",
+      "password_hash": "scrypt$1d84e6674cd284a6eec3d5b11671d9f5$5563c912f9fa45fbc8cdc457b3c830dd6690ab9385b97df8be1db64124d86d83705f3fa6ec54becd54af293105ec16e85a0d73f9a9b711aa4b85e773b3400acf",
+      "role": "SUPER_ADMIN",
+      "created_at": "2026-08-29T08:20:59.315Z",
+      "updated_at": "2026-08-29T08:20:59.330Z"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "student_id": "PUIT/90000001",
+      "name": "Alice Mensah",
+      "intake": "January",
+      "programme": "BSc. Computer Science",
+      "contact": "+233240000001",
+      "eligible": "YES",
+      "has_voted": 0,
+      "voted_at": null,
+      "created_at": "2026-08-29T08:25:43.607Z",
+      "updated_at": "2026-08-29T15:27:47.131Z"
+    },
+    {
+      "id": 2,
+      "student_id": "PUIT/90000002",
+      "name": "Bob Osei",
+      "intake": "September",
+      "programme": "BSc. Electrical Engineering",
+      "contact": "+233240000002",
+      "eligible": "YES",
+      "has_voted": 1,
+      "voted_at": "2026-08-29T15:39:17.303Z",
+      "created_at": "2026-08-29T08:25:43.607Z",
+      "updated_at": "2026-08-29T15:31:48.863Z"
+    },
+    {
+      "id": 3,
+      "student_id": "PUIT/90000003",
+      "name": "Cindy Boateng",
+      "intake": "January",
+      "programme": "BSc. Information Technology",
+      "contact": "+233240000003",
+      "eligible": "YES",
+      "has_voted": 0,
+      "voted_at": null,
+      "created_at": "2026-08-29T08:25:43.607Z",
+      "updated_at": "2026-08-29T08:25:43.607Z"
+    },
+    {
+      "id": 4,
+      "student_id": "PUIT/90000051",
+      "name": "Zed Test",
+      "intake": "January",
+      "programme": "BSc. Computer Science",
+      "contact": null,
+      "eligible": "YES",
+      "has_voted": 0,
+      "voted_at": null,
+      "created_at": "2026-08-29T13:49:38.227Z",
+      "updated_at": "2026-08-29T18:10:05.821Z"
+    }
+  ],
+  "elections": [
+    {
+      "id": 1,
+      "name": "Level 200 Combined Class Executive Election",
+      "description": "Election for the Level 200 combined January and September class executive positions.",
+      "status": "VOTING_OPEN",
+      "start_at": "2026-08-29T07:50:59.330Z",
+      "end_at": "2026-08-29T14:20:59.330Z",
+      "paused_at": null,
+      "pause_reason": null,
+      "created_at": "2026-08-28T08:20:59.330Z",
+      "updated_at": "2026-08-29T07:50:59.330Z"
+    }
+  ],
+  "positions": [
+    {
+      "id": 1,
+      "election_id": 1,
+      "name": "Class President / Representative",
+      "description": "Provides overall leadership and represents the class to faculty.",
+      "display_order": 1,
+      "is_required": 1,
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 2,
+      "election_id": 1,
+      "name": "Vice President",
+      "description": "Supports the president and acts in their absence.",
+      "display_order": 2,
+      "is_required": 1,
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 3,
+      "election_id": 1,
+      "name": "Secretary",
+      "description": "Keeps records, minutes, and handles correspondence.",
+      "display_order": 3,
+      "is_required": 1,
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 4,
+      "election_id": 1,
+      "name": "Treasurer",
+      "description": "Manages class funds and financial records.",
+      "display_order": 4,
+      "is_required": 1,
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 5,
+      "election_id": 1,
+      "name": "Sports Coordinator",
+      "description": "Organizes sporting activities and inter-class events.",
+      "display_order": 5,
+      "is_required": 0,
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    }
+  ],
+  "candidates": [
+    {
+      "id": 1,
+      "election_id": 1,
+      "position_id": 1,
+      "name": "Ama Agyeman",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Class President / Representative.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 2,
+      "election_id": 1,
+      "position_id": 1,
+      "name": "Kofi Baidoo",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Class President / Representative.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 3,
+      "election_id": 1,
+      "position_id": 1,
+      "name": "Yaa Owusu",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Class President / Representative.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 4,
+      "election_id": 1,
+      "position_id": 2,
+      "name": "Esi Addo",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Vice President.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 5,
+      "election_id": 1,
+      "position_id": 2,
+      "name": "Yaw Frimpong",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Vice President.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 6,
+      "election_id": 1,
+      "position_id": 2,
+      "name": "Akosua Boateng",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Vice President.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 7,
+      "election_id": 1,
+      "position_id": 3,
+      "name": "Kwesi Amponsah",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Secretary.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.331Z",
+      "updated_at": "2026-08-29T08:20:59.331Z"
+    },
+    {
+      "id": 8,
+      "election_id": 1,
+      "position_id": 3,
+      "name": "Abena Mensah",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Secretary.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    },
+    {
+      "id": 9,
+      "election_id": 1,
+      "position_id": 3,
+      "name": "Kojo Agyeman",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Secretary.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    },
+    {
+      "id": 10,
+      "election_id": 1,
+      "position_id": 4,
+      "name": "Kwame Baidoo",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Treasurer.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    },
+    {
+      "id": 11,
+      "election_id": 1,
+      "position_id": 4,
+      "name": "Ama Owusu",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Treasurer.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    },
+    {
+      "id": 12,
+      "election_id": 1,
+      "position_id": 4,
+      "name": "Kofi Addo",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Treasurer.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    },
+    {
+      "id": 13,
+      "election_id": 1,
+      "position_id": 5,
+      "name": "Yaa Frimpong",
+      "intake": "September",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Sports Coordinator.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    },
+    {
+      "id": 14,
+      "election_id": 1,
+      "position_id": 5,
+      "name": "Esi Boateng",
+      "intake": "January",
+      "manifesto": "I will serve the class diligently and represent every student's voice as Sports Coordinator.",
+      "photo_path": null,
+      "status": "ACTIVE",
+      "created_at": "2026-08-29T08:20:59.332Z",
+      "updated_at": "2026-08-29T08:20:59.332Z"
+    }
+  ],
+  "otp_challenges": [],
+  "sessions": [
+    {
+      "id": "sess_fd48ebf2bc5281bef13faf40",
+      "student_id": 1,
+      "election_id": 1,
+      "expires_at": "2026-08-29T18:44:47.353Z",
+      "created_at": "2026-08-29T18:14:47.353Z"
+    },
+    {
+      "id": "sess_7b5429bdd7bb2f393341823e",
+      "student_id": 4,
+      "election_id": 1,
+      "expires_at": "2026-08-30T18:37:39.144Z",
+      "created_at": "2026-08-30T18:07:39.144Z"
+    }
+  ],
+  "ballots": [
+    {
+      "id": 1,
+      "election_id": 1,
+      "ballot_reference": "ELX-000001",
+      "submitted_at": "2026-08-29T15:39:17.303Z",
+      "created_at": "2026-08-29T15:39:17.303Z"
+    }
+  ],
+  "votes": [
+    {
+      "id": 1,
+      "ballot_id": 1,
+      "position_id": 1,
+      "candidate_id": 1,
+      "created_at": "2026-08-29T15:39:17.303Z"
+    },
+    {
+      "id": 2,
+      "ballot_id": 1,
+      "position_id": 2,
+      "candidate_id": 4,
+      "created_at": "2026-08-29T15:39:17.303Z"
+    },
+    {
+      "id": 3,
+      "ballot_id": 1,
+      "position_id": 3,
+      "candidate_id": 7,
+      "created_at": "2026-08-29T15:39:17.303Z"
+    },
+    {
+      "id": 4,
+      "ballot_id": 1,
+      "position_id": 4,
+      "candidate_id": 10,
+      "created_at": "2026-08-29T15:39:17.303Z"
+    },
+    {
+      "id": 5,
+      "ballot_id": 1,
+      "position_id": 5,
+      "candidate_id": 13,
+      "created_at": "2026-08-29T15:39:17.303Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": 1,
+      "admin_user_id": 1,
+      "action": "election_opened",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-08-29T07:50:59.332Z"
+    },
+    {
+      "id": 2,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T08:22:26.479Z"
+    },
+    {
+      "id": 3,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T08:23:25.669Z"
+    },
+    {
+      "id": 4,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T08:25:41.960Z"
+    },
+    {
+      "id": 5,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 3,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T08:25:43.609Z"
+    },
+    {
+      "id": 6,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T10:13:35.835Z"
+    },
+    {
+      "id": 7,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:11:03.030Z"
+    },
+    {
+      "id": 8,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:14:25.801Z"
+    },
+    {
+      "id": 9,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:15:10.775Z"
+    },
+    {
+      "id": 10,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:30:27.560Z"
+    },
+    {
+      "id": 11,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:49:38.190Z"
+    },
+    {
+      "id": 12,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:49:38.229Z"
+    },
+    {
+      "id": 13,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:49:38.255Z"
+    },
+    {
+      "id": 14,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:52:04.010Z"
+    },
+    {
+      "id": 15,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:52:04.025Z"
+    },
+    {
+      "id": 16,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T13:52:04.040Z"
+    },
+    {
+      "id": 17,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:01:58.238Z"
+    },
+    {
+      "id": 18,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:02:02.088Z"
+    },
+    {
+      "id": 19,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:03:58.621Z"
+    },
+    {
+      "id": 20,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:04:02.245Z"
+    },
+    {
+      "id": 21,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:04:02.755Z"
+    },
+    {
+      "id": 22,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:07:30.345Z"
+    },
+    {
+      "id": 23,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:07:30.384Z"
+    },
+    {
+      "id": 24,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:07:30.403Z"
+    },
+    {
+      "id": 25,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:12:33.017Z"
+    },
+    {
+      "id": 26,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:12:33.085Z"
+    },
+    {
+      "id": 27,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:12:33.108Z"
+    },
+    {
+      "id": 28,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:20:44.988Z"
+    },
+    {
+      "id": 29,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:20:45.062Z"
+    },
+    {
+      "id": 30,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:20:45.138Z"
+    },
+    {
+      "id": 31,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:27:20.447Z"
+    },
+    {
+      "id": 32,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:27:20.478Z"
+    },
+    {
+      "id": 33,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:27:20.515Z"
+    },
+    {
+      "id": 34,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:29:00.182Z"
+    },
+    {
+      "id": 35,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:29:00.247Z"
+    },
+    {
+      "id": 36,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:29:00.280Z"
+    },
+    {
+      "id": 37,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:40:48.794Z"
+    },
+    {
+      "id": 38,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:40:48.886Z"
+    },
+    {
+      "id": 39,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:40:48.912Z"
+    },
+    {
+      "id": 40,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:48:01.737Z"
+    },
+    {
+      "id": 41,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:48:02.657Z"
+    },
+    {
+      "id": 42,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T14:48:03.120Z"
+    },
+    {
+      "id": 43,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:01:59.685Z"
+    },
+    {
+      "id": 44,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:01:59.893Z"
+    },
+    {
+      "id": 45,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:01:59.941Z"
+    },
+    {
+      "id": 46,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:10:15.272Z"
+    },
+    {
+      "id": 47,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:10:16.228Z"
+    },
+    {
+      "id": 48,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:10:16.258Z"
+    },
+    {
+      "id": 49,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:27:46.343Z"
+    },
+    {
+      "id": 50,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:27:47.154Z"
+    },
+    {
+      "id": 51,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:27:47.295Z"
+    },
+    {
+      "id": 52,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:31:48.284Z"
+    },
+    {
+      "id": 53,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:31:48.864Z"
+    },
+    {
+      "id": 54,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 2,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:31:48.916Z"
+    },
+    {
+      "id": 55,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 2,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:36:11.519Z"
+    },
+    {
+      "id": 56,
+      "admin_user_id": null,
+      "action": "vote_submitted",
+      "entity_type": "ballot",
+      "entity_id": 1,
+      "metadata": {
+        "reference": "ELX-000001"
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:39:17.348Z"
+    },
+    {
+      "id": 57,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:44:46.499Z"
+    },
+    {
+      "id": 58,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T15:44:47.279Z"
+    },
+    {
+      "id": 59,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:00:31.529Z"
+    },
+    {
+      "id": 60,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:00:31.646Z"
+    },
+    {
+      "id": 61,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:41:12.389Z"
+    },
+    {
+      "id": 62,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:45:50.031Z"
+    },
+    {
+      "id": 63,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:54:10.423Z"
+    },
+    {
+      "id": 64,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:56:45.315Z"
+    },
+    {
+      "id": 65,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T16:59:30.612Z"
+    },
+    {
+      "id": 66,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:10:05.603Z"
+    },
+    {
+      "id": 67,
+      "admin_user_id": 1,
+      "action": "voters_imported",
+      "entity_type": "election",
+      "entity_id": 1,
+      "metadata": {
+        "imported": 1,
+        "errors": 0
+      },
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:10:05.822Z"
+    },
+    {
+      "id": 68,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:10:05.846Z"
+    },
+    {
+      "id": 69,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:14:47.356Z"
+    },
+    {
+      "id": 70,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:16:12.621Z"
+    },
+    {
+      "id": 71,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:23:05.862Z"
+    },
+    {
+      "id": 72,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:23:06.171Z"
+    },
+    {
+      "id": 73,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:23:40.964Z"
+    },
+    {
+      "id": 74,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:29:56.001Z"
+    },
+    {
+      "id": 75,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-29T18:37:12.523Z"
+    },
+    {
+      "id": 76,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-30T18:07:38.733Z"
+    },
+    {
+      "id": 77,
+      "admin_user_id": null,
+      "action": "session_created",
+      "entity_type": "student",
+      "entity_id": 4,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-30T18:07:39.146Z"
+    },
+    {
+      "id": 78,
+      "admin_user_id": 1,
+      "action": "admin_login",
+      "entity_type": "user",
+      "entity_id": 1,
+      "metadata": {},
+      "ip_address": "::1",
+      "created_at": "2026-08-30T18:09:15.619Z"
+    }
+  ],
+  "counters": {
+    "ballot_seq": 1
+  }
+}
