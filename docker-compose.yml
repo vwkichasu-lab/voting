@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: voting_backend
+    environment:
+      NODE_ENV: ${APP_ENV:-production}
+      PORT: 8000
+      OTP_EXPIRY_MINUTES: 5
+      OTP_MAX_ATTEMPTS: 5
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/data:/app/data
+    networks:
+      - voting_network
+    command: node src/index.js
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: voting_frontend
+    environment:
+      VITE_API_TARGET: http://backend:8000
+    ports:
+      - "3000:3000"
+    networks:
+      - voting_network
+    depends_on:
+      - backend
+
+volumes:
+
+networks:
+  voting_network:
+    driver: bridge
